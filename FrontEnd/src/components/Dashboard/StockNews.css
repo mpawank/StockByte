@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.stock-news-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px; /* Space between news and education sections */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* Stock Market News Section (Left) */
+.news-section {
+  flex: 1; /* News section takes up 50% of the available space */
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-item-title {
+  font-size: 1.2rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.news-item-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item-title a:hover {
+  text-decoration: underline;
+}
+
+.news-item-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Banner Image Styles for Stock Market News Section */
+.news-banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover; /* To ensure the image covers the space without distortion */
+}
+
+/* Stock Market Education Section (Right) */
+.education-section {
+  flex: 1; /* Education section takes up 50% of the available space */
+  padding-left: 20px;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+.education-item-title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.education-item-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.education-item-video {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.education-item-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .stock-news-container {
+    flex-direction: column;
+  }
+
+  .news-section, .education-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .news-list {
+    flex-direction: column;
+  }
+
+  .education-content {
+    flex-direction: column;
+  }
+}

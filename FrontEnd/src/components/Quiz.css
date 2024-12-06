@@ -1,0 +1,97 @@
+/* Quiz Container */
+.quiz-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Quiz Header */
+.quiz-header {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Question Styling */
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Options Styling */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Next Button Styling */
+.next-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #218838;
+}
+
+/* Score Display */
+.score {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .option {
+    font-size: 0.9rem;
+  }
+
+  .next-button {
+    font-size: 1rem;
+  }
+}

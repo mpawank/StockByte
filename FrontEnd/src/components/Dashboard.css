@@ -1,0 +1,108 @@
+/* Main Dashboard Container */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f4f4f9;
+}
+
+/* User Info Styling */
+.user-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.user-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Page Header */
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Main Columns Container */
+.dashboard-columns {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Section Styling */
+.dashboard-section {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section Headers */
+.dashboard-section h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* List Styles for Cryptos and Stocks */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crypto-icon,
+.stock-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* News Item Styling */
+.news-item {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.news-item h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 0.3rem;
+}
+
+.news-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .dashboard-columns {
+    flex-direction: column;
+  }
+
+  .dashboard-section {
+    margin-bottom: 1.5rem;
+  }
+}

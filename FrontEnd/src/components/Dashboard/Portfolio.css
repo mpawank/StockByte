@@ -1,0 +1,151 @@
+/* Portfolio.css */
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-stock {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d1e7ff;
+}
+
+.add-stock h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+
+.add-stock input,
+.add-stock button {
+  width: 95%; /* Reduced width for smaller input boxes */
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-stock input:focus,
+.add-stock button:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #eaf2ff;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.stock-data {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #0056b3;
+}
+
+.stock-list {
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-name h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333333;
+}
+
+.user-name p {
+  margin: 0;
+  color: #555555;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #004085;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  color: #333333;
+}
+
+.stock-table {
+  display: grid;
+  gap: 10px;
+}
+
+.table-header,
+.stock-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #eaf2ff;
+}
+
+.stock-row {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+.stock-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #495057;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,114 @@
+/* SettingsPage.css */
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.settings-page h1 {
+  color: #333;
+}
+
+.settings-option {
+  margin-bottom: 20px;
+}
+
+.settings-option h2 {
+  color: #444;
+  font-size: 20px;
+}
+
+.settings-option p {
+  font-size: 14px;
+  color: #777;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .settings-page h1,
+body.dark-mode .settings-option h2,
+body.dark-mode .settings-option p {
+  color: white;
+}
+
+body.dark-mode button {
+  background-color: #333;
+}
+
+body.dark-mode button:hover {
+  background-color: #444;
+}
+
+body.dark-mode .slider {
+  background-color: #2196F3;
+}
+
+body.dark-mode .slider:before {
+  background-color: #fff;
+}
